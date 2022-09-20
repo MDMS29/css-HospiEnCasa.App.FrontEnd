@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="index.css">
+    <title>HospiEnCasa.App.FrontEnd</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+</head>
+
+<body>
+
+    <header class="d-flex border-bottom shadow-sm ">
+            <h1>HospiEnCasa.App.FrontEnd</h1>
+            <ul class="d-flex lista">
+                <li><a href="" class="nav-link active"><i class="bi bi-house"></i>Home</a></li>
+                <li><a href="" class="nav-link active"><i class="bi bi-shield-check"></i>Privacy</a></li>
+                <li><a href="" class="nav-link active"><i class="bi bi-list-check"></i>Lista de Pacientes</a></li>
+            </ul>
+    </header>
+    <main>
+        <div class="d-flex espaciado container-main">
+            <div class="d-flex filters">
+                <div>
+                    <label for="entradas">Mostrar</label>
+                    <select name="entradas" id="entradas">
+                        <option value="">10</option>
+                        <option value="">20</option>
+                        <option value="">30</option>
+                    </select>
+                    <label for="entradas">Entradas</label>
+                </div>
+                <div>
+                    <input type="text" name="search" id="search" placeholder="Buscar Paciente">
+                </div>
+            </div>
+            <div>
+                <table class="table table-striped table-light"> 
+                    <th> Nombres</th>
+                    <th>Apellidos</th>
+                    <th>Acciones</th>
+                    <tr>
+                        <td>Ivan Jesus</td>
+                        <td>Castro Ruiz</td>
+                        <td class="acciones">
+                            <a href="" class="btn btn-primary"><i class="bi bi-list-columns-reverse"></i>Detalles</a>
+                            <a href="" class="btn btn-success"><i class="bi bi-pen"></i>Editar</a>
+                            <a href="" class="btn btn-danger"><i class="bi bi-trash"></i>Eliminar</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Sirley Mayerlis</td>
+                        <td>Cespedes Anaya</td>
+                        <td class="acciones">
+                            <a href="" class="btn btn-primary"><i class="bi bi-list-columns-reverse"></i>Detalles</a>
+                            <a href="" class="btn btn-success"><i class="bi bi-pen"></i>Editar</a>
+                            <a href="" class="btn btn-danger"><i class="bi bi-trash"></i>Eliminar</a>
+                        </td>
+                    </tr>
+                </table>
+                <div class="d-flex navegacion-table">
+                    <span>Mostrando 1 a 1 de 1 Entradas</span>
+                    <div>
+                        <button class="btn btn-secondary">Anterior</button><span>1</span><button class="btn btn-secondary">Siguiente</button>
+                    </div>
+                </div>
+            </div>
+            <button class="btn btn-primary add"><i class="bi bi-person-plus"></i>Adicionar un paciente</button>
+        </main>
+        </div>
+    <footer class="border-top shadow-sm">
+        <div class="d-flex espaciado">
+            <p class="footer">&copy; - HospiEnCasa.App.FrontEnd - <a href="">Privacy</a></p>
+        </div>
+    </footer>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+        integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
