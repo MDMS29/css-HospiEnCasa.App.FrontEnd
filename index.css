@@ -35,10 +35,10 @@ select{
     border: none;
     padding: 5px;
     transition: border-bottom 1s ease-in-out;
+    outline: none;
 }
 select:focus{
     border-bottom: 1px solid #ccc;
-    outline: none;
 }
 td, tr{text-align: center;}
 .add{
